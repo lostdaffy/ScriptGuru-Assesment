@@ -1,0 +1,142 @@
+body {
+  background: #f4f6fb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+  width: 220px;
+  padding: 20px 16px;
+  background: linear-gradient(135deg, #4e8cfb 80%, #4fb575 100%);
+  min-height: 100vh;
+  color: #fff;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
+.board-name {
+  cursor: pointer;
+  margin: 10px 0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  transition: background 0.2s;
+}
+
+.board-name:hover,
+.selected {
+  background: rgba(255, 255, 255, 0.18);
+  font-weight: bold;
+}
+
+.main-area {
+  flex: 1;
+  padding: 32px 48px;
+  min-height: 100vh;
+  background: #f9fbff;
+}
+
+.status-column {
+  min-width: 260px;
+  background: #ecf3fd;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(80, 160, 250, 0.07);
+  margin-right: 10px;
+}
+
+.status-column h4 {
+  color: #2782f2;
+  margin-bottom: 12px;
+}
+
+.status-column input,
+.status-column select {
+  display: block;
+  margin-bottom: 10px;
+  padding: 7px 10px;
+  border: 1px solid #c9d9f0;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 15px;
+  color: #303550;
+  width: 96%;
+  max-width: 220px;
+}
+
+.status-column input[type="date"] {
+  color: #2782f2;
+}
+
+.status-column button {
+  margin-top: 4px;
+  padding: 7px 20px;
+  border: none;
+  background: linear-gradient(90deg, #2782f2 80%, #4fb575 100%);
+  color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(60, 140, 240, 0.08);
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.status-column button:hover {
+  background: linear-gradient(90deg, #4fb575 80%, #2782f2 100%);
+}
+
+.task-card {
+  background: #fff;
+  padding: 12px 10px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(80, 160, 250, 0.10);
+  border-left: 5px solid #2782f2;
+  transition: box-shadow 0.2s;
+}
+
+.task-card:hover {
+  box-shadow: 0 2px 16px rgba(80, 160, 250, 0.20);
+  border-left-color: #44d088;
+}
+
+.task-card input,
+.task-card select {
+  display: block;
+  margin-bottom: 7px;
+  width: 94%;
+  max-width: 214px;
+  padding: 6px 9px;
+  border: 1px solid #dde8fa;
+  border-radius: 5px;
+  background: #f5f9ff;
+}
+
+.task-card input[type="date"] {
+  color: #2782f2;
+}
+
+.task-card button {
+  margin-right: 6px;
+  margin-top: 4px;
+  padding: 5px 16px;
+  background: #2782f2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background 0.15s;
+  cursor: pointer;
+}
+
+.task-card button:hover {
+  background: #4fb575;
+}
+
+.task-card small {
+  font-size: 0.97em;
+  color: #465788;
+}
+
+.task-card div {
+  margin-bottom: 2px;
+}
