@@ -11,7 +11,7 @@ function TaskCard({ task, refreshTasks }) {
   useEffect(() => setForm(task), [task]);
 
   const handleUpdate = () => {
-    fetch(`http://localhost:5000/tasks/${task._id}`, {
+    fetch(`https://scriptguru-assesment-1.onrender.com/tasks/${task._id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
@@ -22,7 +22,7 @@ function TaskCard({ task, refreshTasks }) {
   };
 
   const handleDelete = () => {
-    fetch(`http://localhost:5000/tasks/${task._id}`, { method: "DELETE" }).then(
+    fetch(`https://scriptguru-assesment-1.onrender.com/tasks/${task._id}`, { method: "DELETE" }).then(
       refreshTasks
     );
   };

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import StatusColumn from "./StatusColumn";
 
-const API = "http://localhost:5000";
+const API = "https://scriptguru-assesment-1.onrender.com";
 const STATUSES = ["To Do", "In progress", "Done"];
 
 function App() {

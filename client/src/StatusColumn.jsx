@@ -15,7 +15,7 @@ function StatusColumn({ status, tasks, boardId, refreshTasks }) {
   });
 
   const addTask = () => {
-    fetch(`http://localhost:5000/boards/${boardId}/tasks`, {
+    fetch(`https://scriptguru-assesment-1.onrender.com/boards/${boardId}/tasks`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ...task, status: "To Do" }),
